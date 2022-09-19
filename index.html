@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeriform In-Action</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <div class="root">
+        <div class='nav' id='nav'>
+            <a href='#head'>Home</a>
+            <a href='#anno'>Dataset Annotations</a>
+            <a href='#img'>Examples</a>
+            <a href='#cit'>Citation</a>
+        </div>
+        
+        <div class='outIntro' id='intro'>
+            <div class='heading' id='head'>
+                <h1>Aeriform In-Action</h1>
+                <h3>A novel dataset for Human Action Recognition in Aerial Videos</h3>
+            </div>
+            <div class='intro'>
+                <p>
+                    Human actions being diverse in nature cannot be generalized, thus making it quite difficult to train a
+                    machine to recognize such diversified actions. Lack of availability of datasets is a bottleneck in the
+                    exploration of this human action recognition as collecting and annotating a large dataset is a formidable
+                    task. To solve the problem of data scarcity, we present a novel dataset for Human Action Recognition in
+                    Aerial Videos which is a caption of real world scenarios. The proposed dataset consists of 32 high
+                    resolution videos containing 13 action classes with 55,477 frames (without augmentation) and 388,339(approx)
+                    annotations. The dataset addresses several concerns like camera motion, illumination changes, diversity in
+                    actions, dynamic transitions of actions etc. The dataset is captured from a medium altitude having 13 action
+                    classes categorized as atomic actions, human- human interactions and human-object interactions. The dataset
+                    simulates a natural scenario in which each person is performing a random action and the actors are partially
+                    occluded by each other. It contains aggressive and complex actions like kicking and punching, drone
+                    signaling actions like waving, human-human interactions like handshaking and hugging and human-object
+                    interactions like carrying. This dataset will provide a baseline for recognizing human actions in aerial
+                    videos and will encourage the embedding researchers to progress the field.
+                    <br /><br />
+                </p>
+                <table>
+                    <tr>
+                        <th>Attributes</th>
+                        <th>Values</th>
+                    </tr>
+                    <tr>
+                        <td>No. of Actions</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Frame Rate</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Resolution</td>
+                        <td>3840 x 2160</td>
+                    </tr>
+                    <tr>
+                        <td>Total no. of frames</td>
+                        <td>55,477</td>
+                    </tr>
+                    <tr>
+                        <td>Annotation</td>
+                        <td>Bounding box</td>
+                    </tr>
+                    <tr>
+                        <td>No. of Actors</td>
+                        <td>7-8</td>
+                    </tr>
+                    <tr>
+                        <td>Average video durarion</td>
+                        <td>60 sec</td>
+                    </tr>
+                    <tr>
+                        <td>Environment</td>
+                        <td>Outdoor</td>
+                    </tr>
+                    <tr>
+                        <td>Number of annotations</td>
+                        <td>388,339(approx)</td>
+                    </tr>
+                    <tr>
+                        <td>Altitude</td>
+                        <td>20-25m</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class='outAnnotations' id='anno'>
+            <div class='Annnotations'>
+                <h1>
+                    Dataset Annotations
+                </h1>
+                <p>
+                    The videos are annotated using DarkLabel [23] which is an open source tool. All the videos are converted
+                    into frames and the annotations are provided for each frame. The annotations are mapped back to the original
+                    images for validating the dataset.
+                </p>
+            </div>
+            <table>
+                <tr>
+                    <th>Name of the object</th>
+                    <th>Action of the object</th>
+                    <th>ID of the object</th>
+                    <th>Bounding Box Coordinates(x,y,w,h)</th>
+                </tr>
+                <tr>
+                    <td>Person</td>
+                    <td>Punching</td>
+                    <td>0</td>
+                    <td>2121, 1579, 60, 112</td>
+                </tr>
+                <tr>
+                    <td>Person</td>
+                    <td>Punching</td>
+                    <td>1</td>
+                    <td>2001, 1420, 60, 97</td>
+                </tr>
+                <tr>
+                    <td>Person</td>
+                    <td>Punching</td>
+                    <td>2</td>
+                    <td>2061, 1398, 60, 101</td>
+                </tr>
+                <tr>
+                    <td>Person</td>
+                    <td>Punching</td>
+                    <td>3</td>
+                    <td>2216, 1537, 76, 124</td>
+                </tr>
+                <tr>
+                    <td>Person</td>
+                    <td>Standing</td>
+                    <td>4</td>
+                    <td>1637, 1523, 73, 101</td>
+                </tr>
+                <tr>
+                    <td>Person</td>
+                    <td>Walking</td>
+                    <td>5</td>
+                    <td>1567, 1542, 55, 121</td>
+                </tr>
+                <tr>
+                    <td>Person</td>
+                    <td>Walking</td>
+                    <td>6</td>
+                    <td>1813, 1329, 51, 115</td>
+                </tr>
+                <tr>
+                    <td>Person</td>
+                    <td>Lying</td>
+                    <td>7</td>
+                    <td>1278, 1826, 90, 117</td>
+                </tr>
+            </table>
+        </div>
+        
+   <!--   <div class='outImages'>
+            <h1>Examples</h1>
+            <div class='slider'>
+                <Carousel slides={slides1} autoplay={true} interval={4000} />
+            </div>
+            <br />
+            <br />
+            <div class='slider'>
+                <Carousel slides={slides2} autoplay={true} interval={4000} />
+            </div>
+        </div>  -->
+        
+        
+        <div class='outImages' id='img'>
+            <h1>Original Frames</h1>
+            <div>
+                <img src='images_without_frame/img1.jpg' alt='img1' />
+                <img src="images_without_frame/img2.jpg" alt='img2' />
+                <img src="images_without_frame/img3.jpg" alt='img3' />
+            </div>
+            <div>
+                <img src="images_without_frame/img4.jpg" alt='img4' />
+                <img src="images_without_frame/img5.png" alt='img5' />
+                <img src="images_without_frame/img6.png" alt='img6' />
+            </div>
+            <h1>Zoomed in versions of annotated frames</h1>
+            <div>
+                <img src='images_with_frame/img1.jpg' alt='img1' />
+                <img src="images_with_frame/img2.jpg" alt='img2' />
+                <img src="images_with_frame/img3.jpg" alt='img3' />
+            </div>
+            <div>
+                <img src="images_with_frame/img4.jpg" alt='img4' />
+                <img src="images_with_frame/img5.jpg" alt='img5' />
+                <img src="images_with_frame/img6.jpg" alt='img6' />
+            </div>
+        </div>
+        
+        
+        <div class='outCitation' id='cit'>
+            <h1>
+                Developing Team
+            </h1>
+            <div class='citation'>
+                <div class="inner_citation">
+                    <img src="citation_images/Surbhi_mam.jpg" alt='img1' />
+                    <p>Surbhi Kapoor has completed her B.Tech from Guru Nanak Dev Engineering College,Punjab,
+                    India in 2014 and M.Tech in 2016 in Computer Science and engineering. She is awarded with
+                    Junior Research Fellow (JRF) award from university grant commission (UGC), New Delhi in 2018
+                    and she is pursuing her Ph.D in Computer Science and Engineering from University Institute of
+                    Engineering and Technology, Chandigarh, India. Her research interests include object detection,
+                    image and video analytics.</p>
+                </div>
+                <div class="inner_citation">
+                    <img src="citation_images/Akash_sir.jpg" alt='img2' />
+                    <p>Akashdeep is currently working as an assistant professor in Computer Science and Engineering at
+                    University Institute of Engineering. &amp; Technology, Panjab University, Chandigarh, India.He has
+                    published more than 22 research papers in international journals and conferences. He has 12+ years
+                    of teaching and research experience. His research interests include wireless networks, soft
+                    computing and video analytics, moving object detection and tracking, traffic sensing and
+                    classification.</p>
+                </div>
+                <div class="inner_citation">
+                    <img src="citation_images/Amandeep_mam.jpg" alt='img3' />
+                    <p>Amandeep Verma is currently working as an associate professor in Information and Technology at
+                    University Institute of Engineering. &amp; Technology, Panjab University, Chandigarh, India. She has
+                    done her PhD in Computer Science &amp; Engineering in 2016. Her area of interest includes parallel
+                    and distributed computing, computer networks, workflow scheduling in cloud computing, and IoT.</p>
+                </div>
+                <div class="inner_citation">
+                    <img src="citation_images/Sarbjeet_sir.jpg" alt='img4' />
+                    <p>Sarbjeet Singh is currently working as a professor in Computer Science and Engineering at UIET,
+                    Panjab University, Chandigarh, India. He has received Ph.D degree in Computer Science and
+                    Engineering from Thapar University, Patiala, India in 2009.He has more than 30 research
+                    publications in international journals and conferences to his credit. His research interests include
+                    parallel and distributed systems, distributed security architectures, privacy and trust related issues
+                    in distributed environments, object detection and video surveillance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

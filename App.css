@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+html{
+  background-color: white;
+  text-align: justify;
+}
+body{
+  margin: 0;
+}
+body h1{
+  font-weight: 600;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: #888888;
+  padding: 10px;
+}
+.nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left:25px;
+  margin-right: 25px;
+  padding: 5px;
+}
+.nav a:hover{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 25px auto 0px;
+  text-align:left;
+  text-align: center;
+  width: 100%;
+}
+.heading h1{
+  font-size: 40px;
+  line-height: 0%;
+  font-family: 'Montserrat', sans-serif;
+  color: brown;
+}
+.heading h3{
+  color: rgb(211, 119, 119);
+  margin-bottom: 0%;
+}
+
+.outIntro,.outAnnotations{
+  background-color: rgb(254, 238, 219);
+  width: 80%;
+  margin: 25px auto;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 25px;
+}
+.intro{
+  margin: auto;
+  margin-top: 0%;
+  padding: 30px;
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.outAnnotations{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.intro p{
+  margin-top: 0%;
+}
+.outCitation h1, .outAnnotations h1{
+  color: brown;
+  font-weight: 500;
+  text-align: center;
+}
+hr{
+  border: 0.5px solid gray;
+}
+
+.list{
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+}
+li{
+  font-size: 20px;
+  line-height: 30px;
+}
+.outCitation{
+  width: 80%;
+  margin: 25px auto;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 25px;
+  background-color:  rgb(254, 238, 219);
+}
+.citation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+.citation img{
+  border-radius: 10px;
+}
+.outCitation p{
+  width: 60%;
+  margin: 25px auto;
+  font-size: large;
+}
+.outAnnotations p{
+  width: 60%;
+  margin: auto;
+}
+.outCitation h1{
+  font-style: 600;
+}
+
+.outImages{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 25px auto;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 25px;
+  background-color:  rgb(254, 238, 219);
+  color: brown;
+}
+.images{
+  margin: auto;
+  width: 70%;
+}
+#img img{
+  width: 300px;
+  height: 200px;
+  margin: 10px 10px;
+  transition: transform 0.5s;
+}
+#img img:hover{
+  transform: scale(1.5);
+}
+table,th,td{
+  padding: 2px;
+  border-collapse: collapse;
+}
+.intro th{
+  padding: 5px;
+}
+td{
+  width: 200px;
+}
+tr{
+  background-color: rgb(255, 223, 223);
+}
+th{
+  background-color: rgb(211, 119, 119);
+  color: white;
+}
+.outAnnotations table{
+  margin: 25px;
+}
+.outAnnotations td {
+  padding: 3px;
+  text-align: center;
+  width: fit-content;
+}
+.outAnnotations th{
+  padding: 10px;
+}
+.slider{
+  width: 80%;
+}
+.citation img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.inner_citation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  background-color: rgb(255, 223, 223);
+  margin: auto;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 10px auto;
+}
+.inner_citation p{
+font-size: 15px;
+
+}
+.inner_citation img{
+  margin-left: 30px;
+}
