@@ -2,69 +2,57 @@
 html{
   background-color: white;
   text-align: justify;
+  font-family: 'San Francisco', Helvetica, Arial, san-serif;
 }
 body{
   margin: 0;
 }
 body h1{
-  font-weight: 600;
+  font-weight: bold;
 }
 .nav{
   display: flex;
   flex-direction: row;
   justify-content: left;
-  background-color: #888888;
+  background-color: brown;
   padding: 10px;
 }
 .nav a{
   text-decoration: none;
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 18px;
   font-weight: bold;
   margin-left:25px;
   margin-right: 25px;
   padding: 5px;
 }
 .nav a:hover{
-  background-color: white;
+  background-color: rgb(211, 119, 119) ;
   border-radius: 10px;
 }
-
-.heading{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 25px auto 0px;
-  text-align:left;
-  text-align: center;
-  width: 100%;
-}
 .heading h1{
+  margin: auto;
+  padding-top: 25px;
+  text-align: center;
   font-size: 40px;
-  line-height: 0%;
   font-family: 'Montserrat', sans-serif;
   color: brown;
 }
 .heading h3{
+  text-align: center;
   color: rgb(211, 119, 119);
-  margin-bottom: 0%;
 }
-
 .outIntro,.outAnnotations{
-  background-color: rgb(254, 238, 219);
-  width: 80%;
-  margin: 25px auto;
-  box-shadow: 5px 10px 18px #888888;
-  padding: 25px;
+  background-image: url(background.jpg);
+  margin: 10px auto;
+  padding: 25px auto;
 }
 .intro{
   margin: auto;
-  margin-top: 0%;
-  padding: 30px;
-  width:60%;
+  padding: 15px;
+  width:90%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -75,17 +63,21 @@ body h1{
   align-items: center;
 }
 .intro p{
-  margin-top: 0%;
+  width: 60%;
+  color: white;
+  background:rgba(255, 255, 255, 0.3) ;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 15px;
 }
 .outCitation h1, .outAnnotations h1{
   color: brown;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
 }
 hr{
   border: 0.5px solid gray;
 }
-
 .list{
   width: 60%;
   margin: auto;
@@ -96,46 +88,36 @@ li{
   line-height: 30px;
 }
 .outCitation{
-  width: 80%;
-  margin: 25px auto;
-  box-shadow: 5px 10px 18px #888888;
+  margin: 10px auto;
   padding: 25px;
-  background-color:  rgb(254, 238, 219);
+  background-image: url(background.jpg);
+  margin-bottom: 0px;
 }
 .citation{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 100%;
   margin: auto;
-}
-.citation img{
-  border-radius: 10px;
-}
-.outCitation p{
-  width: 60%;
-  margin: 25px auto;
-  font-size: large;
 }
 .outAnnotations p{
-  width: 60%;
+  width: 100%;
   margin: auto;
+  color: white;
+  text-align: justify;
 }
 .outCitation h1{
   font-style: 600;
 }
-
 .outImages{
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  width: 80%;
-  margin: 25px auto;
-  box-shadow: 5px 10px 18px #888888;
+  margin: 10px auto;
   padding: 25px;
-  background-color:  rgb(254, 238, 219);
+  background-image: url(background.jpg);
   color: brown;
 }
 .images{
@@ -152,11 +134,11 @@ li{
   transform: scale(1.5);
 }
 table,th,td{
-  padding: 2px;
+  padding-left: 15px;
   border-collapse: collapse;
 }
-.intro th{
-  padding: 5px;
+th{
+  padding: 10px 15px;
 }
 td{
   width: 200px;
@@ -184,24 +166,36 @@ th{
 }
 .citation img{
   width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  height: 160px;
+  border-radius: 10px;
+  margin-top: 0px;
 }
 .inner_citation{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items:center;
-  background-color: rgb(255, 223, 223);
-  margin: auto;
-  padding: 30px;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 30px;
-  margin: 10px auto;
+  margin: 10px 10px;
+  padding: 20px 0px;
+  width:100%;
+  height: 450px;
 }
 .inner_citation p{
 font-size: 15px;
-
+color: white;
+padding: 5px;
+width: 80%;
+margin-top: 20px;
 }
-.inner_citation img{
-  margin-left: 30px;
+.Annotations a{
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+}
+.Annotations a:hover{
+  color: rgb(0, 138, 138);
+}
+.Annotations p{
+  width: 50%;
 }
