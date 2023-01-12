@@ -26,8 +26,8 @@
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"></script>
 
 
 </head>
@@ -55,7 +55,7 @@
                     <li><a class="smoothscroll"  href="#team" title="team">Team</a></li>
                 </ul>
     
-                <p>A Novel <a href="https://drive.google.com/drive/folders/1PG6_A8ps97Tz140MDWzXbFiaBTKndGwm">Dataset</a> for Human Action Recognition in Aerial Videos </p>
+                <p>A Novel <a href="https://drive.google.com/drive/folders/1PG6_A8ps97Tz140MDWzXbFiaBTKndGwm" target="_blank" rel="noopener noreferrer">Dataset</a> for Human Action Recognition in Aerial Videos </p>
             </div> <!-- end header-nav__content -->
 
         </nav>  <!-- end header-nav -->
@@ -88,7 +88,7 @@
                 </h1>
 
                 <div class="home-content__buttons">
-                    <a href="https://drive.google.com/drive/folders/1PG6_A8ps97Tz140MDWzXbFiaBTKndGwm" class="smoothscroll btn btn--stroke">
+                    <a href="https://drive.google.com/drive/folders/1PG6_A8ps97Tz140MDWzXbFiaBTKndGwm" class="btn btn--stroke" target="_blank" rel="noopener noreferrer">
                         Download it
                     </a>
                     <a href="#about" class="smoothscroll btn btn--stroke">
@@ -536,7 +536,6 @@
     <section id="contact" class="s-contact">
 
         <div class="overlay"></div>
-        <div class="contact__line"></div>
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
@@ -581,11 +580,6 @@
                     </fieldset>
                 </form>
 
-                <!-- contact-warning -->
-                <div id="form-message">
-                    <br>
-                </div> 
-
             </div> <!-- end contact-primary -->
 
             <div class="contact-secondary">
@@ -629,45 +623,6 @@
     </footer> <!-- end footer -->
 
 
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div> <!-- end photoSwipe background -->
-
 
     <!-- preloader
     ================================================== -->
@@ -683,29 +638,9 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        var form = document.getElementById("contactForm");
-        var formMessage = document.getElementById("form-message");
-        form.onsubmit = function(event) {
-        event.preventDefault();
-        var formData = new FormData(form);
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", form.action, true);
-        xhr.send(formData);
-        xhr.onload = function(e) {
-        if (xhr.status === 200) {
-            formMessage.innerHTML = "Your message was sent, thank you!";
-        } else {
-        var response = JSON.parse(xhr.response);
-            formMessage.innerHTML = "Something went wrong. Please try again";
-        }
-        };
-        };
-        </script>
-
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
