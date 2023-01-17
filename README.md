@@ -1,2 +1,2 @@
 # Aeriform-In-Action
-[Click here to get know more about it](https://surbhi-31.github.io/Aeriform-In-Action/)
+[Check out to learn about Aeriform-In-Action](https://surbhi-31.github.io/Aeriform-In-Action/)
